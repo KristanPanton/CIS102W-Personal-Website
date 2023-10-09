@@ -297,7 +297,7 @@ section.essay {
 }
 
 @media only screen and (max-width: 1082px) {
-.spotlight {
-  flex-direction: column-reverse;
-}
+  .spotlight {
+    flex-direction: column-reverse;
+  }
 }
