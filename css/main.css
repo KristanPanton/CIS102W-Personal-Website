@@ -1,47 +1,303 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Varela+Round&display=swap");
 
 :root {
-    --white: #fffaec;
-    --black: #000;
+  --white: #fff;
+  --black: #111;
+  --red1: #de594c;
+  --red2: #ff7157;
+  --blue: #007acc;
+  --brown: #794a42;
+  --teal: #7ba7aa;
+  --dark-teal: #034448;
+  --dark-grey: #31302a;
+  --nav-lnk-margin-left: 20px;
+  --padding-lr: 0 30px;
+  --hf-margin: 20px;
+  --border-solid: var(--white) 5px solid;
+  --border-dashed: var(--white) 5px dashed;
+  --ease: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-html, body {
-    margin: 0;
-    font-family: 'Lexend', sans-serif;
-    min-height: 100%;
-    width: auto;
-    /* background-color: #222428; */
-    background: #fffaec;
+body {
+  margin: 0;
+  /* font-family: 'Lexend', sans-serif; */
+  font-family: "Varela Round", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  /* background-color: #222428; */
+  background: var(--black);
+  color: var(--white);
 }
 
+main {
+  padding: var(--padding-lr);
+  flex-grow: 1;
+}
 
 .header-nav-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    flex: 1 0 67%;
-    align-items: center;
-}
-/**/
-header {
-    flex-grow: 0;
-    flex-shrink: 0;
-    backface-visibility: hidden;
-}
-
-header h1 {
-    margin-bottom: 0;
-}
-
-.header-logo a {
-    text-decoration: none;
-}
-
-.header-logo a:visited {
-    color: var(--black);
+  padding: var(--padding-lr);
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1 0 67%;
+  align-items: center;
+  flex-grow: 0;
+  /* background-color: var(--red1); */
+  border-bottom: var(--border-dashed);
+  margin-bottom: var(--hf-margin);
 }
 
 .header-nav-wrapper nav {
-    text-align: right;
-    margin-left: auto;
-    padding-left: 2.5vw;
+  text-align: right;
+  margin-left: auto;
+  padding-left: 2.5vw;
+  font-size: larger;
+}
+
+header {
+  flex-grow: 0;
+  flex-shrink: 0;
+  backface-visibility: hidden;
+}
+
+.header-logo img.logo-short {
+  display: none;
+}
+
+.header-logo img {
+  height: 50px;
+  margin: 10px 0;
+}
+
+.active a {
+  text-decoration: underline;
+}
+
+a.nav-link {
+  text-decoration: none;
+  margin-left: var(--nav-lnk-margin-left);
+  padding: 10px 0;
+  display: inline-block;
+  transition-property: transform;
+  transition-duration: 0.4s;
+  /* transition-delay: 2s; */
+}
+
+a.nav-link:link,
+a.nav-link:visited {
+  color: var(--white);
+}
+
+a.nav-link:active {
+  text-decoration: underline;
+}
+
+/* 
+a.nav-link.nav-link-anim:hover {
+  transform: translateY(-5px);
+} */
+
+a.nav-link:active {
+  text-decoration: underline;
+}
+
+/* add when clicking menu button 
+a.nav-link {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+} */
+
+/* Slide in */
+a.nav-link {
+  overflow: hidden;
+}
+
+a.nav-link::after {
+  content: "";
+  position: absolute;
+  margin-top: 25px;
+  width: 30px;
+  height: 0.1em;
+  background-color: var(--white);
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+a.nav-link:hover::after,
+a.nav-link:focus::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+/* 
+a.nav-link:after {
+  background: var(--white);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.5s var(--ease);
+} */
+
+.header-nav-wrapper nav a.nav-btn {
+  /* margin: 20px; */
+  transition-property: transform 0.4s;
+  padding: 16px 26px;
+  background: var(--white);
+  border-radius: 8px;
+  color: var(--black);
+}
+
+a.nav-btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.nav-menu-icon {
+  height: auto;
+  width: 25px;
+  cursor: pointer;
+  /* transform: translateY(11px); */
+  border: var(--border-solid);
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+  background-color: var(--white);
+}
+
+#portrait {
+  width: 280px;
+  border-radius: 5px;
+  border-color: #000;
+  border-width: 3px;
+}
+
+.card {
+  /* create a card with thick borders */
+  background-color: var(--dark-teal);
+  max-width: 500px;
+  border: var(--border-solid);
+  /* border-radius: 10px; */
+  /* set the width and height of the card */
+  /* width: 300px;
+  height: 200px; */
+  /* use flexbox to align the content */
+  display: flex;
+  align-items: center;
+}
+
+.card-text {
+  /* set the font size and color of the text */
+  font-size: 20px;
+  /* color: white; */
+  /* add some margin and padding */
+  margin: 10px;
+  padding: 10px;
+}
+
+.card-image {
+  margin: 10px;
+  padding: 10px;
+}
+
+footer {
+  padding: 40px 30px 32px 30px;
+  /* background-color: var(--black); */
+  /* color: var(--white); */
+  border-top: var(--border-dashed);
+  margin-top: var(--hf-margin);
+}
+
+.spotlight {
+  /* background-image: url("../img/creation.jpeg"); */
+  background-image: linear-gradient(to bottom right, var(--red2), var(--blue));
+  /* background: repeating-linear-gradient(
+    -55deg,
+    var(--dark-grey),
+    var(--dark-grey) 10px,
+    var(--black) 10px,
+    var(--black) 20px
+); */
+  display: flex;
+  /* max-height: 360.89px; */
+  max-height: min-content;
+  /* flex-flow: row-reverse; */
+  /* font-family: ui-monospace; */
+  justify-content: space-between;
+  border: var(--border-solid);
+  /* padding: 10px 20px; */
+}
+
+.spotlight-img-container {
+  overflow: clip;
+  /* background: repeating-linear-gradient(
+  -55deg,
+  #222,
+  #222 10px,
+  #333 10px,
+  #333 20px
+); */
+  max-height: 28vw;
+}
+
+.q-container {
+  padding: 0 20px;
+}
+
+.spotlight q {
+  quotes: none;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 10vw;
+  color: var(--black);
+  /* color: var(--white); */
+  /* -webkit-text-stroke: 5px var(--black); */
+}
+
+section.essay {
+  font-size: large;
+}
+
+/*
++-------------------------------+
+| Media queries                 |
++-------------------------------+
+*/
+
+@media only screen and (max-width: 720px) {
+  /* Short logo appears, Long disappears */
+  .header-logo img.logo-short {
+    display: initial;
+  }
+
+  .header-logo img.logo-long {
+    display: none;
+  }
+  /* ================================== */
+}
+
+@media only screen and (max-width: 605px) {
+  /* Links disappear, menu icon appears */
+  .nav-link-container {
+    display: none;
+  }
+
+  .nav-menu-icon {
+    display: initial;
+  }
+  /* ================================== */
+
+  /* Short logo disappears, Long appears */
+  .header-logo img.logo-short {
+    display: none;
+  }
+
+  .header-logo img.logo-long {
+    display: initial;
+  }
+  /* ================================== */
+}
+
+@media only screen and (max-width: 1082px) {
+.spotlight {
+  flex-direction: column-reverse;
+}
 }

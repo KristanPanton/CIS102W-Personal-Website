@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f0876efc-458a-4e80-a3e8-6ddceb4b0eea" name="Default Changelist" comment="added to costs page, modified popularity page" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1jmZB1OKTEWbxEFnP17UrC2109Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Coolk\WebstormProjects\IndividualProject1" />
+      <recent name="C:\Users\Coolk\WebstormProjects\IndividualProject1\img" />
+      <recent name="C:\Users\Coolk\WebstormProjects\IndividualProject1\rankings" />
+      <recent name="C:\Users\Coolk\WebstormProjects\IndividualProject1\category_overview" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/IndividualProject1/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f0876efc-458a-4e80-a3e8-6ddceb4b0eea" name="Default Changelist" comment="" />
+      <created>1604411087607</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604411087607</updated>
+      <workItem from="1604411088648" duration="1385000" />
+      <workItem from="1604436874265" duration="2586000" />
+      <workItem from="1604447002967" duration="9000" />
+      <workItem from="1604455113965" duration="22402000" />
+      <workItem from="1604513689203" duration="257000" />
+      <workItem from="1604514068217" duration="103000" />
+      <workItem from="1604514186627" duration="1161000" />
+      <workItem from="1604515363625" duration="66894000" />
+      <workItem from="1604688394833" duration="4746000" />
+      <workItem from="1604693542941" duration="972000" />
+      <workItem from="1604694732005" duration="5325000" />
+      <workItem from="1604974358445" duration="677000" />
+      <workItem from="1605535755698" duration="327000" />
+      <workItem from="1605705398069" duration="119000" />
+      <workItem from="1605706248558" duration="819000" />
+      <workItem from="1605896536172" duration="130000" />
+      <workItem from="1605903910849" duration="1232000" />
+      <workItem from="1605934712727" duration="2130000" />
+      <workItem from="1606088808782" duration="737000" />
+      <workItem from="1606098311192" duration="13000" />
+      <workItem from="1606104916538" duration="29000" />
+      <workItem from="1606104962037" duration="3000" />
+      <workItem from="1606105018164" duration="59000" />
+      <workItem from="1642643908919" duration="1113000" />
+      <workItem from="1642646468732" duration="1916000" />
+      <workItem from="1642711248013" duration="1377000" />
+    </task>
+    <task id="LOCAL-00001" summary="Init">
+      <created>1604584062123</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604584062123</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed footer, restructured site">
+      <created>1604614524155</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604614524155</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed popularity page css">
+      <created>1604633882037</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604633882037</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added to costs page, modified popularity page">
+      <created>1604641632190</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604641632190</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added presentation page">
+      <created>1604693325494</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604693325494</updated>
+    </task>
+    <task id="LOCAL-00006" summary="changed popularity.html to stats.html, added pics to stats.html">
+      <created>1604694508149</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604694508149</updated>
+    </task>
+    <task id="LOCAL-00007" summary="updated content scroll">
+      <created>1604974952139</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604974952139</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init" />
+    <MESSAGE value="fixed footer, restructured site" />
+    <MESSAGE value="fixed popularity page css" />
+    <MESSAGE value="added to costs page" />
+    <MESSAGE value="added to costs page, modified popularity page" />
+    <MESSAGE value="added presentation page" />
+    <MESSAGE value="changed popularity.html to stats.html, added pics to stats.html" />
+    <MESSAGE value="updated content scroll" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated content scroll" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
