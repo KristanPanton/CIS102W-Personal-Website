@@ -6,38 +6,77 @@
     <title>Kristan Panton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="scripts/main.js"></script>
+    <link rel="icon" href="img/logo-short-favicon.ico" />
   </head>
   <body>
-    <div id="container">
-      <div class="header-nav-wrapper">
-        <header class="header-logo">
-          <a href="index.html">
-            <h1>Kristan Panton</h1>
-            <img src="" alt="" />
+    <div class="header-nav-wrapper">
+      <header class="header-logo">
+        <a href="index.html">
+          <!-- <h1>Kristan Panton</h1> -->
+          <img class="logo-long" src="img/logo-long.png" alt="Kristan Logo" />
+          <img
+            class="logo-short"
+            src="img/logo-short.png"
+            alt="Kristan Initials"
+          />
+        </a>
+      </header>
+
+      <nav>
+        <span>
+          <img src="img/menu.svg" class="nav-menu-icon" alt="" />
+        </span>
+        <span class="nav-link-container">
+          <a class="nav-link nav-link-anim" href="index.html">Home</a>
+          <a class="nav-link nav-link-anim" href="about.html">About Me</a>
+          <a class="nav-link nav-link-anim active" href="projects.html"
+            >Projects</a
+          >
+          <a
+            class="nav-link nav-link-anim"
+            href="mailto:kristan.panton@gmail.com"
+          >
+            Contact
           </a>
-        </header>
-
-        <nav>
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="about.html">About Me</a>
-          <a class="nav-link" href="projects.html">Projects</a>
-          <a class="nav-link" href="mailto:kristan.panton@gmail.com" class="btn">Contact</a>
-        </nav>
-      </div>
-
-      <main>
-        <p align="center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolorem, officiis atque eveniet exercitationem iusto eligendi amet, dolorum earum temporibus ab rem vero tempora architecto ea maiores corrupti! Incidunt, architecto.
-          <br />
-          <br />
-        </p>
-        <img
-          src=""
-          alt=""
-        />
-      </main>
-      <footer></footer>
+        </span>
+      </nav>
     </div>
+
+    <main>
+      <a class="sl-link" href="https://github.com/KristanPanton/CS-321-Project-1">
+        <section class="spotlight sl-anim">
+          <div class="spotlight-info-container">
+            <dl>
+              <dt>Get that A!</dt>
+              <dd>First project for CS-321 - Intro to Game Programming</dd>
+            </dl>
+          </div>
+          <div
+            class="spotlight-img-container"
+            style="
+              background-image: url('img/get-that-a-screenshot.png');
+              background-size: 100%;
+            "
+          >
+            <img src="img/get-that-a-screenshot.png" alt="" />
+          </div>
+        </section>
+      </a>
+    </main>
+    <footer>Stuff</footer>
+    <!-- Uncompressed jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="/scripts/main.js"></script> -->
+    <script>
+      $(document).ready(function () {
+        $(".nav-menu-icon").click(function () {
+          $(".nav-link-container").toggleClass("nav-menu-vert");
+        });
+      });
+    </script>
   </body>
 </html>
