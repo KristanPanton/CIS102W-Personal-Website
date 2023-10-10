@@ -180,6 +180,17 @@ a.nav-btn:hover {
   background-color: var(--white);
 }
 
+.nav-menu-vert {
+  display: grid !important;
+  position: absolute;
+  color: var(--black);
+  border: var(--border-solid);
+  padding: 5px 10px;
+  z-index: 1;
+  right: 30px;
+  background-color: var(--black);
+}
+
 #portrait {
   width: 280px;
   border-radius: 5px;
