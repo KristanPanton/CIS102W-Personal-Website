@@ -41,17 +41,41 @@
     </div>
 
     <main>
-      <section class="spotlight">
-        <div class="spotlight-info-container">
-          <q
+      <section class="spotlight stripe-bg">
+        <div class="spotlight-info-container gradient-bg">
+          <img
+            class="sl-kristan"
+            src="img/Kristan-cropped.png"
+            alt="Kristan cartoon"
+          />
+          <q id="intro-quote"
             >I&nbsp;create.
             <br />
-            I&nbsp;ideate.</q
+            I&nbsp;build.
+          </q>
+        </div>
+
+        <div class="spotlight-img-container code-overlay">
+          <code style="-webkit-text-stroke: 0.4vw var(--gradient2)"
+            >&lt;&sol;&gt;</code
           >
         </div>
-        <div class="spotlight-img-container" style="background-image: url('img/creation-2.jpeg');">
-          <img src="img/creation-2.jpeg" alt="" />
+      </section>
+      <section class="spotlight flex-col">
+        <div class="info-container welcome text-lg">
+          <h1>Welcome!</h1>
+          <p>
+            This my personal website! Here, you'll find my coding projects, info
+            about me, and some notes I've taken. Take a look around and let's
+            connect through the world of tech and knowledge. Enjoy your visit!
+          </p>
         </div>
+
+        <!-- <div
+          class="spotlight-img-container code-overlay stripe-bg"
+        >
+          <img src="img/Kristan-cropped.png" class="" alt="" />
+        </div> -->
       </section>
       <!-- <div class="card">
         <img class="card-image" src="img/Kristan-cropped.png" alt="" />
@@ -65,8 +89,25 @@
           </p>
         </div>
       </div> -->
+      <section class="theysaidso-container">
+        <script
+          type="text/javascript"
+          src="https://theysaidso.com/gadgets/v3/theysaidso.js"
+        ></script>
+        <div class="quote_container">
+          <script>
+            TheySaidSo.render({ qod_category: "inspire" });
+          </script>
+        </div>
+      </section>
     </main>
-    <footer>Stuff</footer>
+    <footer>
+      Made with 💖 by&nbsp;<img
+        src="img/logo-long.png"
+        class="logo-long"
+        alt="Kristan Logo"
+      />
+    </footer>
     <!-- Uncompressed jquery -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
