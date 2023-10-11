@@ -252,7 +252,6 @@ footer img.logo-long {
     var(--black) 15px,
     var(--black) 30px
   ); */
-
   background: repeating-linear-gradient(
     -43deg,
     var(--dark-grey),
@@ -260,6 +259,7 @@ footer img.logo-long {
     var(--black) 2vw,
     var(--black) 4vw
   );
+  /* background: repeating-linear-gradient(-43deg, var(--dark-grey), var(--black)); */
 }
 
 .text-lg {
@@ -497,6 +497,11 @@ section.essay {
  * animation bg-pan-left
  * ----------------------------------------
  */
+.bg-pan-left {
+  animation: 30s linear 0s infinite alternate both running bg-pan-left;
+  background-size: 600% 100%;
+}
+
 @keyframes bg-pan-left {
   0% {
     background-position: 100% 50%;
@@ -595,13 +600,13 @@ cite.author {
   }
 }
 
-
 @media only screen and (max-width: 550px) {
   main {
     padding: 20px 0;
   }
 
-  .spotlight, .quote_container {
+  .spotlight,
+  .quote_container {
     border: none;
     animation: none;
   }
