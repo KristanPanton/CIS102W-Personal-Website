@@ -167,6 +167,15 @@ a.nav-link:after {
 /* transform: scale(1.1, 1.1); */
 /* } */
 
+a.nav-btn {
+  border-radius: 4px;
+  padding: 10px;
+}
+
+/* .contact { */
+  /* background-color: var(--dark-teal) !important; */
+/* } */
+
 .nav-menu-icon {
   height: auto;
   width: 25px;
@@ -244,7 +253,7 @@ footer img.logo-long {
   top: 2px;
 }
 
-.stripe-bg {
+.black-grey-stripe-bg {
   /* background: repeating-linear-gradient(
     -43deg,
     var(--dark-grey),
@@ -255,11 +264,20 @@ footer img.logo-long {
   background: repeating-linear-gradient(
     -43deg,
     var(--dark-grey),
-    var(--dark-grey) 2vw,
-    var(--black) 2vw,
-    var(--black) 4vw
+    var(--dark-grey) 1.5vw,
+    var(--black) 1.5vw,
+    var(--black) 3vw
   );
-  /* background: repeating-linear-gradient(-43deg, var(--dark-grey), var(--black)); */
+}
+
+.black-red-stripe-bg {
+  background: repeating-linear-gradient(
+    -43deg,
+    var(--red1),
+    var(--red1) 1.5vw,
+    var(--black) 1.5vw,
+    var(--black) 3vw
+  );
 }
 
 .text-lg {
@@ -497,8 +515,9 @@ section.essay {
  * animation bg-pan-left
  * ----------------------------------------
  */
-.bg-pan-left {
-  animation: 30s linear 0s infinite alternate both running bg-pan-left;
+
+.more-projects-anim {
+  animation: 60s linear 0s infinite alternate both running bg-pan-left;
   background-size: 600% 100%;
 }
 
