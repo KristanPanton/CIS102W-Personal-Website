@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kristan Panton - Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="icon" href="img/logo-short-favicon.ico" />
+  </head>
+  <body>
+    <div class="header-nav-wrapper">
+      <header class="header-logo">
+        <a href="index.html">
+          <!-- <h1>Kristan Panton</h1> -->
+          <img class="logo-long" src="img/logo-long.png" alt="Kristan Logo" />
+          <img
+            class="logo-short"
+            src="img/logo-short.png"
+            alt="Kristan Initials"
+          />
+        </a>
+      </header>
+
+      <nav>
+        <span>
+          <img src="img/menu.svg" class="nav-menu-icon" alt="" />
+        </span>
+        <span class="nav-link-container">
+          <a class="nav-link nav-link-anim" href="index.html">Home</a>
+          <a class="nav-link nav-link-anim" href="about.html">About Me</a>
+          <a class="nav-link nav-link-anim" href="projects.html">Projects</a>
+          <a class="nav-link nav-link-anim active" href="contact.html">
+            Contact
+          </a>
+        </span>
+      </nav>
+    </div>
+
+    <main>
+      <div class="main-container">
+        <section class="spotlight">
+          <table>
+            <tr>
+              <td>School email:</td>
+              <td><a href="mailto:kp79842p@pace.edu">kp79842p@pace.edu</a></td>
+            </tr>
+            <tr>
+              <td>Personal email:</td>
+              <td><a href="mailto:kristan.panton@gmail.com">kristan.panton@gmail.com</a></td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </main>
+    <footer>
+      Made with 💖 by&nbsp;<img
+        src="img/logo-long.png"
+        class="logo-long"
+        alt="Kristan Logo"
+      />
+    </footer>
+    <!-- Uncompressed jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="/scripts/main.js"></script> -->
+    <script>
+      $(document).ready(function () {
+        $(".nav-menu-icon").click(function () {
+          $(".nav-link-container").toggleClass("nav-menu-vert");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -399,6 +399,14 @@ section.essay {
   font-size: large;
 }
 
+td {
+  padding: 10px;
+}
+
+a {
+  color: var(--red1);
+}
+
 /*
 +-------------------------------+
 | Media queries                 |
