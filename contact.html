@@ -13,10 +13,10 @@
       <header class="header-logo">
         <a href="index.html">
           <!-- <h1>Kristan Panton</h1> -->
-          <img class="logo-long" src="img/logo-long.png" alt="Kristan Logo" />
+          <img class="logo-long" src="img/logo-long.svg" alt="Kristan Logo" />
           <img
             class="logo-short"
-            src="img/logo-short.png"
+            src="img/logo-short.svg"
             alt="Kristan Initials"
           />
         </a>
@@ -38,25 +38,58 @@
     </div>
 
     <main>
-      <div class="main-container">
-        <section
-          class="spotlight"
+      <section class="spotlight mb-20">
+        <div
+          class="profile-pic-container"
           style="
-            border-radius: 50%;
-            max-width: 50%;
-            max-height: 50%;
-            margin: 0 auto 20px auto;
+            background-image: url('img/DSC_0487_pp-2-bright\ \(B&W\)\ \(Phone\).jpg');
+            background-size: 102%;
           "
         >
-          <div
-            class="spotlight-img-container"
-            style="
-              background: url('img/DSC_0487_pp-2-bright\ \(B&W\).jpg');
-              background-size: 100%;
-              background-position-y: 18%;
-              border-radius: 50%;
-            "
-          >
+          <div class="profile-pic">
+            <img
+              class="sl-clipped"
+              src="img/DSC_0487_pp-2-bright (B&W) (Phone).jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="spotlight-info-container">
+          <section class="table">
+            <table>
+              <tr>
+                <td>School email:</td>
+                <td>
+                  <a href="mailto:kp79842p@pace.edu">kp79842p@pace.edu</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Personal email:</td>
+                <td>
+                  <a href="mailto:kristan.panton@gmail.com"
+                    >kristan.panton@gmail.com</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>LinkedIn:</td>
+                <td>
+                  <a
+                    href="https://www.linkedin.com/in/kristan-panton/"
+                    target="_blank"
+                    >https://www.linkedin.com/in/kristan-panton/</a
+                  >
+                </td>
+              </tr>
+            </table>
+          </section>
+        </div>
+      </section>
+
+      <!-- 
+      <div class="contact-container">
+        <section class="profile-pic-container">
+          <div class="profile-pic">
             <img
               class="sl-clipped"
               src="img/DSC_0487_pp-2-bright (B&W).jpg"
@@ -64,7 +97,7 @@
             />
           </div>
         </section>
-        <section class="spotlight" style="justify-content: center">
+        <section class="table">
           <table>
             <tr>
               <td>School email:</td>
@@ -90,11 +123,11 @@
             </tr>
           </table>
         </section>
-      </div>
+      </div> -->
     </main>
     <footer>
       Made with 💖 by&nbsp;<img
-        src="img/logo-long.png"
+        src="img/logo-long.svg"
         class="logo-long"
         alt="Kristan Logo"
       />
@@ -110,6 +143,7 @@
       $(document).ready(function () {
         $(".nav-menu-icon").click(function () {
           $(".nav-link-container").toggleClass("nav-menu-vert");
+          $(".nav-menu-icon").toggleClass("menu-active");
         });
       });
     </script>

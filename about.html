@@ -13,10 +13,10 @@
       <header class="header-logo">
         <a href="index.html">
           <!-- <h1>Kristan Panton</h1> -->
-          <img class="logo-long" src="img/logo-long.png" alt="Kristan Logo" />
+          <img class="logo-long" src="img/logo-long.svg" alt="Kristan Logo" />
           <img
             class="logo-short"
-            src="img/logo-short.png"
+            src="img/logo-short.svg"
             alt="Kristan Initials"
           />
         </a>
@@ -44,7 +44,7 @@
 
     <main>
       <div class="main-container">
-        <section class="spotlight">
+        <section class="spotlight mb-20">
           <div
             class="spotlight-img-container"
             style="
@@ -168,7 +168,7 @@
     </main>
     <footer>
       Made with 💖 by&nbsp;<img
-        src="img/logo-long.png"
+        src="img/logo-long.svg"
         class="logo-long"
         alt="Kristan Logo"
       />
@@ -184,6 +184,7 @@
       $(document).ready(function () {
         $(".nav-menu-icon").click(function () {
           $(".nav-link-container").toggleClass("nav-menu-vert");
+          $(".nav-menu-icon").toggleClass("menu-active");
         });
       });
     </script>

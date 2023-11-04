@@ -13,10 +13,10 @@
       <header class="header-logo">
         <a href="index.html">
           <!-- <h1>Kristan Panton</h1> -->
-          <img class="logo-long" src="img/logo-long.png" alt="Kristan Logo" />
+          <img class="logo-long" src="img/logo-long.svg" alt="Kristan Logo" />
           <img
             class="logo-short"
-            src="img/logo-short.png"
+            src="img/logo-short.svg"
             alt="Kristan Initials"
           />
         </a>
@@ -30,53 +30,51 @@
           <a class="nav-link nav-link-anim active" href="index.html">Home</a>
           <a class="nav-link nav-link-anim" href="about.html">About Me</a>
           <a class="nav-link nav-link-anim" href="projects.html">Projects</a>
-          <a
-            class="nav-link nav-link-anim"
-            href="contact.html"
-          >
-            Contact
-          </a>
+          <a class="nav-link nav-link-anim" href="contact.html"> Contact </a>
         </span>
       </nav>
     </div>
 
     <main>
-      <section class="spotlight black-grey-gradient-stripe-bg">
-        <div class="spotlight-info-container gradient-bg">
-          <img
-            class="sl-kristan"
-            src="img/Kristan-cropped.png"
-            alt="Kristan cartoon"
-          />
-          <q id="intro-quote"
-            >I&nbsp;create.
-            <br />
-            I&nbsp;build.
-          </q>
-        </div>
+      <div class="mb-20">
+        <section class="spotlight black-grey-gradient-stripe-bg">
+          <div class="spotlight-info-container gradient-bg">
+            <img
+              class="sl-kristan"
+              src="img/Kristan-cropped.svg"
+              alt="Kristan cartoon"
+            />
+            <q id="intro-quote"
+              >I&nbsp;create.
+              <br />
+              I&nbsp;build.
+            </q>
+          </div>
 
-        <div class="spotlight-img-container code-overlay">
-          <code style="-webkit-text-stroke: 0.4vw var(--gradient2)"
-            >&lt;&sol;&gt;</code
-          >
-        </div>
-      </section>
-      <section class="spotlight flex-col">
-        <div class="info-container welcome text-lg">
-          <h1>Welcome!</h1>
-          <p>
-            This my personal website! Here, you'll find my coding projects, info
-            about me, and some notes I've taken. Take a look around and let's
-            connect through the world of tech and knowledge. Enjoy your visit!
-          </p>
-        </div>
+          <div class="spotlight-img-container code-overlay">
+            <code style="-webkit-text-stroke: 0.4vw var(--gradient2)"
+              >&lt;&sol;&gt;</code
+            >
+          </div>
+        </section>
+        <section class="spotlight flex-col">
+          <div class="info-container welcome text-lg">
+            <h1>Welcome!</h1>
+            <p>
+              This my personal website! Here, you'll find my coding projects,
+              info about me, and some notes I've taken. Take a look around and
+              let's connect through the world of tech and knowledge. Enjoy your
+              visit!
+            </p>
+          </div>
 
-        <!-- <div
+          <!-- <div
           class="spotlight-img-container code-overlay black-grey-stripe-bg"
         >
           <img src="img/Kristan-cropped.png" class="" alt="" />
         </div> -->
-      </section>
+        </section>
+      </div>
       <!-- <div class="card">
         <img class="card-image" src="img/Kristan-cropped.png" alt="" />
         <div class="card-text">
@@ -103,7 +101,7 @@
     </main>
     <footer>
       Made with 💖 by&nbsp;<img
-        src="img/logo-long.png"
+        src="img/logo-long.svg"
         class="logo-long"
         alt="Kristan Logo"
       />
@@ -119,6 +117,7 @@
       $(document).ready(function () {
         $(".nav-menu-icon").click(function () {
           $(".nav-link-container").toggleClass("nav-menu-vert");
+          $(".nav-menu-icon").toggleClass("menu-active");
         });
       });
     </script>
