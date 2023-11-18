@@ -1,81 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Kristan Panton - Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link rel="icon" href="img/logo-short-favicon.ico" />
-  </head>
-  <body>
-    <div class="header-nav-wrapper">
-      <header class="header-logo">
-        <a href="index.html">
-          <!-- <h1>Kristan Panton</h1> -->
-          <img class="logo-long" src="img/logo-long.svg" alt="Kristan Logo" />
-          <img
-            class="logo-short"
-            src="img/logo-short.svg"
-            alt="Kristan Initials"
-          />
-        </a>
-      </header>
 
-      <nav>
-        <span>
-          <img src="img/menu.svg" class="nav-menu-icon" alt="" />
-        </span>
-        <span class="nav-link-container">
-          <a class="nav-link nav-link-anim active" href="index.html">Home</a>
-          <a class="nav-link nav-link-anim" href="about.html">About Me</a>
-          <a class="nav-link nav-link-anim" href="projects.html">Projects</a>
-          <a class="nav-link nav-link-anim" href="contact.html"> Contact </a>
-        </span>
-      </nav>
-    </div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Kristan Panton - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <link rel="icon" href="img/logo-short-favicon.ico" />
+</head>
 
-    <main>
-      <div class="mb-20">
-        <section class="spotlight black-grey-gradient-stripe-bg">
-          <div class="spotlight-info-container gradient-bg">
-            <img
-              class="sl-kristan"
-              src="img/Kristan-cropped.svg"
-              alt="Kristan cartoon"
-            />
-            <q id="intro-quote"
-              >I&nbsp;create.
-              <br />
-              I&nbsp;build.
-            </q>
-          </div>
+<body>
+  <div class="header-nav-wrapper">
+    <header class="header-logo">
+      <a href="index.html">
+        <!-- <h1>Kristan Panton</h1> -->
+        <img class="logo-long" src="img/logo-long.svg" alt="Kristan Logo" />
+        <img class="logo-short" src="img/logo-short.svg" alt="Kristan Initials" />
+      </a>
+    </header>
 
-          <div class="spotlight-img-container code-overlay">
-            <code style="-webkit-text-stroke: 0.4vw var(--gradient2)"
-              >&lt;&sol;&gt;</code
-            >
-          </div>
-        </section>
-        <section class="spotlight flex-col">
-          <div class="info-container welcome text-lg">
-            <h1>Welcome!</h1>
-            <p>
-              This my personal website! Here, you'll find my coding projects,
-              info about me, and some notes I've taken. Take a look around and
-              let's connect through the world of tech and knowledge. Enjoy your
-              visit!
-            </p>
-          </div>
+    <nav>
+      <span>
+        <img src="img/menu.svg" class="nav-menu-icon" alt="" />
+      </span>
+      <span class="nav-link-container">
+        <a class="nav-link nav-link-anim active" href="index.html">Home</a>
+        <a class="nav-link nav-link-anim" href="about.html">About Me</a>
+        <a class="nav-link nav-link-anim" href="projects.html">Projects</a>
+        <a class="nav-link nav-link-anim" href="contact.html"> Contact </a>
+      </span>
+    </nav>
+  </div>
 
-          <!-- <div
+  <main>
+
+    <section class="intro">
+      <div>
+        <div class="circle">
+          <img class="kristan-cartoon" src="img/Kristan-cropped-grey.svg" alt="Kristan cartoon" />
+        </div>
+        <h1>Strong, passionate student looking for opportunities.</h1>
+        <p>I would like to contribute my skills and fervor to exciting projects. Let's work together.</p>
+        <a class="call-to-action btn" href="contact.html">Contact me</a>
+      </div>
+    </section>
+
+    <div class="mb-20" style="overflow: hidden;">
+      <section class="spotlight black-grey-gradient-stripe-bg">
+        <div class="spotlight-info-container gradient-bg scroll-trigger">
+          <q id="spotlight-quote">I&nbsp;create.
+            <br />
+            I&nbsp;code.
+          </q>
+        </div>
+
+        <div class="spotlight-img-container code-overlay" style="width: 100%;">
+          <code style="-webkit-text-stroke: 0.4vw var(--gradient2)">&lt;&sol;&gt;</code>
+        </div>
+      </section>
+      <section class="spotlight flex-col">
+        <div class="info-container welcome text-lg">
+          <h1>Welcome!</h1>
+          <p>
+            This my personal website! Here, you'll find my coding projects,
+            info about me, and some notes I've taken. Take a look around and
+            let's connect through the world of tech and knowledge. Enjoy your
+            visit!
+          </p>
+        </div>
+
+        <!-- <div
           class="spotlight-img-container code-overlay black-grey-stripe-bg"
         >
           <img src="img/Kristan-cropped.png" class="" alt="" />
         </div> -->
-        </section>
-      </div>
-      <!-- <div class="card">
+      </section>
+    </div>
+    <!-- <div class="card">
         <img class="card-image" src="img/Kristan-cropped.png" alt="" />
         <div class="card-text">
           <h1>Welcome!</h1>
@@ -87,39 +89,50 @@
           </p>
         </div>
       </div> -->
-      <section class="theysaidso-container">
-        <script
-          type="text/javascript"
-          src="https://theysaidso.com/gadgets/v3/theysaidso.js"
-        ></script>
-        <div class="quote_container">
-          <script>
-            TheySaidSo.render({ qod_category: "inspire" });
-          </script>
-        </div>
-      </section>
-    </main>
-    <footer>
-      Made with 💖 by&nbsp;<img
-        src="img/logo-long.svg"
-        class="logo-long"
-        alt="Kristan Logo"
-      />
-    </footer>
-    <!-- Uncompressed jquery -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.js"
-      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script src="/scripts/main.js"></script> -->
-    <script>
-      $(document).ready(function () {
-        $(".nav-menu-icon").click(function () {
-          $(".nav-link-container").toggleClass("nav-menu-vert");
-          $(".nav-menu-icon").toggleClass("menu-active");
-        });
+    <section class="theysaidso-container">
+      <script type="text/javascript" src="https://theysaidso.com/gadgets/v3/theysaidso.js"></script>
+      <div class="quote_container">
+        <script>
+          TheySaidSo.render({ qod_category: "inspire" });
+        </script>
+      </div>
+    </section>
+  </main>
+  <footer>
+    Made with 💖 by&nbsp;<img src="img/logo-long.svg" class="logo-long" alt="Kristan Logo" />
+  </footer>
+  <!-- Uncompressed jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <!-- <script src="/scripts/main.js"></script> -->
+  <script>
+    $(document).ready(function () {
+      $(".nav-menu-icon").click(function () {
+        $(".nav-link-container").toggleClass("nav-menu-vert");
+        $(".nav-menu-icon").toggleClass("menu-active");
       });
-    </script>
-  </body>
+    });
+    $(window).scroll(function () {
+      var $heightScrolled = $(window).scrollTop();
+      // var $defaultHeight = 500;
+      console.log(Math.round($heightScrolled));
+      // var padding = 21 - $heightScrolled / 30;
+      var padding = 0;
+      if ($heightScrolled < 615) {
+        // $(".scroll-trigger").css("padding", "0 " + padding + "vw");
+        // $(".code-overlay code").css("rotate", padding * 3 + "deg");
+      }
+
+      // if ($heightScrolled < $defaultHeight) {
+      //     $('#mynav').removeClass("b")
+      //     $('#mynav').addClass("a")
+      // }
+      // else {
+      //     $('#mynav').addClass("b")
+      // }
+
+    });
+  </script>
+</body>
+
 </html>
