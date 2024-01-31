@@ -1,3 +1,8 @@
+:root {
+  --checkbox-wrap-color: var(--red);
+  --checkbox-wrap-disabled: var(--dark-grey);
+}
+
 .field {
   border: var(--border-solid);
   border-radius: var(--border-radius);
@@ -24,26 +29,99 @@
   align-items: baseline; */
   /* justify-content: left; */
   /* background-color: var(--black); */
+  /* background: var(--red); */
+  background: linear-gradient(180deg, var(--blue) 50%, var(--black) 50%);
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px 20px 10px 20px;
   color: var(--white);
   max-width: var(--reading-width);
-  padding: 0 20px;
-  margin: auto;
+  margin: 20px;
   /* padding: 10px; */
   /* width: 100%; */
 }
 
-/* .form-container { */
-  /* display: flex;
-  flex-direction: column; */
-  
-  /* max-width: var(--reading-width); */
-  /* display: flex;
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* max-width: var(--reading-width); */
+/* display: flex;
   flex-wrap: wrap; */
-  /* justify-content: center; */
+/* justify-content: center; */
 /* } */
 
 textarea.field {
   resize: vertical;
+  font-family: inherit;
+}
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: var(--white);
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid var(--white);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]#consent-checkbox::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: var(--white);
+}
+
+input[type="checkbox"]#consent-checkbox:checked::before {
+  transform: scale(1);
+}
+/* 
+input[type="checkbox"]#consent-checkbox:focus {
+  outline: max(2px, 0.15em) solid var(--white);
+  outline-offset: max(2px, 0.15em);
+  border-color: var(--red);
+} */
+
+input[type="checkbox"]#consent-checkbox:disabled {
+  --checkbox-wrap-color: var(--checkbox-wrap-disabled);
+
+  color: var(--checkbox-wrap-disabled);
+  cursor: not-allowed;
+}
+
+.checkbox-wrap {
+  /* line-height: 1.1; */
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.checkbox-wrap + .checkbox-wrap {
+  margin-top: 1em;
+}
+
+.checkbox-wrap--disabled {
+  color: var(--checkbox-wrap-disabled);
+  cursor: not-allowed;
 }
 
 .submit-btn {
@@ -53,6 +131,7 @@ textarea.field {
   border: var(--border-solid);
   border-radius: var(--border-radius);
   color: var(--white);
+  font-weight: bold;
   margin: 0.8rem 0 0.8rem 0;
   text-decoration: none;
   /* animation: shadow-pop-tr-out 300ms cubic-bezier(0.47, 0, 0.745, 0.715) both; */
@@ -98,4 +177,12 @@ textarea.field {
       0 0 var(--shadow);
     transform: translateX(0) translateY(0);
   }
+}
+
+@media screen and (max-width: 290px) {
+  .form {
+    border-radius: 0;
+    margin: 20px 0;
+  }
+  
 }

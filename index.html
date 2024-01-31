@@ -7,6 +7,7 @@
   <title>Kristan Panton - Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/nav-menu.css" />
   <link rel="icon" href="img/logo-short-favicon.ico" />
 </head>
 
@@ -22,7 +23,12 @@
 
     <nav>
       <span>
-        <img src="img/menu.svg" class="nav-menu-icon" alt="" />
+        <input type="checkbox" id="menu_checkbox">
+        <label for="menu_checkbox" class="">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
       </span>
       <span class="nav-link-container">
         <a class="nav-link nav-link-anim active" href="index.html">Home</a>
@@ -41,63 +47,68 @@
           <img class="kristan-cartoon" src="img/Kristan-cropped-grey.svg" alt="Kristan cartoon" />
         </div>
         <h1>Strong, passionate student looking for opportunities.</h1>
-        <p>I would like to contribute my skills and fervor to exciting projects. Let's work together.</p>
-        <a class="call-to-action btn" href="contact.html">Contact me</a>
+        <p>I would like to contribute my skills and passion to exciting projects. Let's work together.</p>
+        <a class="call-to-action btn" href="contact.html">Contact&nbsp;me</a>
       </div>
     </section>
 
-    <div class="mb-20" style="overflow: hidden;">
-      <section class="spotlight black-grey-gradient-stripe-bg">
+    <section class="spotlight flex-col" style="
+      padding: 3vw 1vw;
+      margin: 60px 0;
+      /* border: var(--border-solid); */
+      border-radius: 5px;
+      /* background: linear-gradient(45deg, var(--blue) 50%, var(--black) 50%); */
+      background: var(--blue);
+        ">
+      <div class="info-container welcome" style="color: var(--black);">
+        <h1>Welcome!</h1>
+        <p>
+          This my personal website! Here, you'll find:
+          <br>
+          <a href="projects.html">>&nbsp;coding projects,</a>
+          <br>
+          <a href="about.html">>&nbsp;info about me,</a>
+          <br>
+          <a href="https://kristans-garden.vercel.app">>&nbsp;and some notes I've taken.</a>
+          <br>
+          Take a look around and let's connect. Enjoy your visit!
+        </p>
+      </div>
+    </section>
+
+    <div style="overflow: hidden;">
+      <section class="spotlight blue-black-stripe-bg">
         <div class="spotlight-info-container gradient-bg scroll-trigger">
-          <q id="spotlight-quote">I&nbsp;create.
+          <q id="spotlight-quote">
+            <p class="">I&nbsp;create.</p>
             <br />
-            I&nbsp;code.
+            <p class="css-typing">I&nbsp;code.</p>
           </q>
         </div>
 
         <div class="spotlight-img-container code-overlay" style="width: 100%;">
-          <code style="-webkit-text-stroke: 0.4vw var(--gradient2)">&lt;&sol;&gt;</code>
+          <code style="-webkit-text-stroke: clamp(.15rem, .19rem, .4vw) var(--blue)">&lt;&sol;&gt;</code>
         </div>
       </section>
-      <section class="spotlight flex-col">
-        <div class="info-container welcome text-lg">
-          <h1>Welcome!</h1>
-          <p>
-            This my personal website! Here, you'll find my coding projects,
-            info about me, and some notes I've taken. Take a look around and
-            let's connect through the world of tech and knowledge. Enjoy your
-            visit!
-          </p>
-        </div>
+      <section class="spotlight skills">
+        <b>My Skills:</b>
+        <br>
+        C++, Java, SQL, HTML, CSS, JavaScript, PHP, Python, Unity, Git, Linux
+      </section>
 
-        <!-- <div
-          class="spotlight-img-container code-overlay black-grey-stripe-bg"
-        >
-          <img src="img/Kristan-cropped.png" class="" alt="" />
-        </div> -->
-      </section>
     </div>
-    <!-- <div class="card">
-        <img class="card-image" src="img/Kristan-cropped.png" alt="" />
-        <div class="card-text">
-          <h1>Welcome!</h1>
-          <p>
-            Welcome to my personal website! Here, you'll find my coding
-            projects, info about me, and some notes I've taken. Take a look
-            around and let's connect through the world of tech and knowledge.
-            Enjoy your visit!
-          </p>
-        </div>
-      </div> -->
+
     <section class="theysaidso-container">
       <script type="text/javascript" src="https://theysaidso.com/gadgets/v3/theysaidso.js"></script>
       <div class="quote_container">
         <script>
-          TheySaidSo.render({ qod_category: "inspire" });
+          TheySaidSo.render({ qod_category: 'inspire' });
         </script>
       </div>
     </section>
+
   </main>
+
   <footer>
     Made with 💖 by&nbsp;<img src="img/logo-long.svg" class="logo-long" alt="Kristan Logo" />
   </footer>
@@ -111,26 +122,38 @@
         $(".nav-link-container").toggleClass("nav-menu-vert");
         $(".nav-menu-icon").toggleClass("menu-active");
       });
-    });
-    $(window).scroll(function () {
-      var $heightScrolled = $(window).scrollTop();
-      // var $defaultHeight = 500;
-      console.log(Math.round($heightScrolled));
-      // var padding = 21 - $heightScrolled / 30;
-      var padding = 0;
-      if ($heightScrolled < 615) {
-        // $(".scroll-trigger").css("padding", "0 " + padding + "vw");
-        // $(".code-overlay code").css("rotate", padding * 3 + "deg");
-      }
 
-      // if ($heightScrolled < $defaultHeight) {
-      //     $('#mynav').removeClass("b")
-      //     $('#mynav').addClass("a")
-      // }
-      // else {
-      //     $('#mynav').addClass("b")
-      // }
+      $("#menu_checkbox").change(function () {
+        $(".nav-link-container").toggleClass("visible");
+        // $(".nav-menu-icon").toggleClass("menu-active");
+      });
 
+      // $("div.quote_container").append("<script>TheySaidSo.render({ qod_category: 'inspire' });<\/script>");
+
+      $(window).scroll(function () {
+        var windowHeight = $(document).height() - $(window).height();
+        // var windowHeight = document.documentElement.scrollHeight;
+        var $heightScrolled = $(window).scrollTop();
+        // var $defaultHeight = 500;
+        console.log(`hs: ${$heightScrolled} / wh: ${windowHeight}`);
+        var loadPercent = Math.round($heightScrolled / windowHeight * 100);
+        // var padding = 21 - $heightScrolled / 30;
+        var padding = 0;
+        document.documentElement.style.setProperty('--load-percentage', loadPercent + '%');
+        if ($heightScrolled < 615) {
+          // $(".scroll-trigger").css("padding", "0 " + padding + "vw");
+          // $(".code-overlay code").css("rotate", padding * 3 + "deg");
+        }
+
+        // if ($heightScrolled < $defaultHeight) {
+        //     $('#mynav').removeClass("b")
+        //     $('#mynav').addClass("a")
+        // }
+        // else {
+        //     $('#mynav').addClass("b")
+        // }
+
+      });
     });
   </script>
 </body>

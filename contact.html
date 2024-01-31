@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/form.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/nav-menu.css" />
   <link rel="icon" href="img/logo-short-favicon.ico" />
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
@@ -46,78 +47,96 @@
 
     <nav>
       <span>
-        <img src="img/menu.svg" class="nav-menu-icon" alt="" />
+        <!-- <img src="img/menu.svg" class="nav-menu-icon" alt="" /> -->
+        <!-- <input type="checkbox" role="button" aria-label="Display the menu" class="nav-menu-icon menu"> -->
+        <input type="checkbox" id="menu_checkbox">
+        <label for="menu_checkbox" class="">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
       </span>
       <span class="nav-link-container">
         <a class="nav-link nav-link-anim" href="index.html">Home</a>
         <a class="nav-link nav-link-anim" href="about.html">About Me</a>
         <a class="nav-link nav-link-anim" href="projects.html">Projects</a>
-        <a class="nav-link nav-link-anim active" href="contact.html">
-          Contact
-        </a>
+        <a class="nav-link nav-link-anim active" href="contact.html"> Contact </a>
       </span>
     </nav>
+
   </div>
-  <div class="profile-pic-container mb-20" style="
-            background-image: url('img/DSC_0487_pp-2-bright\ \(B&W\)\ \(Phone\).jpg');
-            background-size: 100%;
-            margin: auto;
-          ">
-  </div>
+  <main class="padded">
+    <div class="contact">
 
-
-  <span style="margin: auto; font-size: x-large; font-weight: 100;">Get in touch.</span>
-
-  <div class="form-container">
-    <form id="contact-form" class="form">
-      <input type="hidden" name="contact_number" required>
-      <div class="field-wrap">
-        <label for="contact-name">Name</label>
-        <input id="contact-name" class="field" name="contact_name" type="text" required>
+      <div class="spotlight" style="justify-content: space-evenly; align-items: center;">
+        <div class="spotlight-img-container" style="margin-bottom: 100px;">
+          <div class="profile-pic-bg mb-20">
+            <div class="profile-pic-container"></div>
+          </div>
+        </div>
+        <div class="spotlight-info-container">
+          <!-- <span style="display: flex; justify-content: center; font-size: 3rem; font-weight: 100;">Get in touch.</span> -->
+          <div class="form-container">
+            <form id="contact-form" class="form">
+              <input type="hidden" name="contact_number" required>
+              <div class="field-wrap">
+                <label for="contact-name">Name</label>
+                <input id="contact-name" class="field" name="contact_name" type="text" required>
+              </div>
+              <div class="field-wrap">
+                <label for="contact-email">Email</label>
+                <input id="contact-email" class="field" name="contact_email" type="text" required>
+              </div>
+              <div class="field-wrap">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" class="field" name="message" cols="30" rows="10" required></textarea>
+              </div>
+              <div style="margin-top: 0.9rem;" class="checkbox-wrap">
+                <input type="checkbox" name="privacy-consent" id="consent-checkbox" required>
+                <label>I agree that my information and data will
+                  be collected and stored to answer my inquiry by phone or e-mail. My data will not be passed on to
+                  other
+                  third
+                  parties. Note: You can revoke your consent at any time for the future by e-mail to
+                  kristan.panton@gmail.com.*</label>
+              </div>
+              <input type="submit" class="action-btn submit-btn" value="Send">
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="field-wrap">
-        <label for="contact-email">Email</label>
-        <input id="contact-email" class="field" name="contact_email" type="text" required>
-      </div>
-      <div class="field-wrap">
-        <label for="contact-message">Message</label>
-        <textarea id="contact-message" class="field" name="message" cols="30" rows="10" required></textarea>
-      </div>
-      <input type="submit" class="action-btn submit-btn" value="Send">
-    </form>
-  </div>
-
-  <section class="mb-20">
-    <div class="spotlight-info-container">
-
-      <section class="table">
-        <table>
-          <tr>
-            <td>School email:</td>
-            <td>
-              <a href="mailto:kp79842p@pace.edu">kp79842p@pace.edu</a>
-            </td>
-          </tr>
-          <tr>
-            <td>Personal email:</td>
-            <td>
-              <a href="mailto:kristan.panton@gmail.com">kristan.panton@gmail.com</a>
-            </td>
-          </tr>
-          <tr>
-            <td>LinkedIn:</td>
-            <td>
-              <a href="https://www.linkedin.com/in/kristan-panton/"
-                target="_blank">https://www.linkedin.com/in/kristan-panton/</a>
-            </td>
-          </tr>
-        </table>
-      </section>
     </div>
-  </section>
+    <section class="mb-20">
+      <div class="spotlight-info-container">
+
+        <section class="table">
+          <table>
+            <tr>
+              <td>School email:</td>
+              <td>
+                <a href="mailto:kp79842p@pace.edu">kp79842p@pace.edu</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Personal email:</td>
+              <td>
+                <a href="mailto:kristan.panton@gmail.com">kristan.panton@gmail.com</a>
+              </td>
+            </tr>
+            <tr>
+              <td>LinkedIn:</td>
+              <td>
+                <a href="https://www.linkedin.com/in/kristan-panton/"
+                  target="_blank">https://www.linkedin.com/in/kristan-panton/</a>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </section>
 
 
-  <!-- 
+    <!-- 
       <div class="contact-container">
         <section class="profile-pic-container">
           <div class="profile-pic">
@@ -169,6 +188,35 @@
         $(".nav-link-container").toggleClass("nav-menu-vert");
         $(".nav-menu-icon").toggleClass("menu-active");
       });
+      $("#menu_checkbox").change(function () {
+        $(".nav-link-container").toggleClass("visible");
+        // $(".nav-menu-icon").toggleClass("menu-active");
+      })
+      $(window).scroll(function () {
+        var windowHeight = $(document).height() - $(window).height();
+        // var windowHeight = document.documentElement.scrollHeight;
+        var $heightScrolled = $(window).scrollTop();
+        // var $defaultHeight = 500;
+        console.log(`hs: ${$heightScrolled} / wh: ${windowHeight}`);
+        var loadPercent = Math.round($heightScrolled / windowHeight * 100);
+        // var padding = 21 - $heightScrolled / 30;
+        var padding = 0;
+        document.documentElement.style.setProperty('--load-percentage', loadPercent + '%');
+        if ($heightScrolled < 615) {
+          // $(".scroll-trigger").css("padding", "0 " + padding + "vw");
+          // $(".code-overlay code").css("rotate", padding * 3 + "deg");
+        }
+
+        // if ($heightScrolled < $defaultHeight) {
+        //     $('#mynav').removeClass("b")
+        //     $('#mynav').addClass("a")
+        // }
+        // else {
+        //     $('#mynav').addClass("b")
+        // }
+
+      });
+
     });
   </script>
 </body>
